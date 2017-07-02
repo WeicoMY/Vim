@@ -23,10 +23,10 @@ set nohls "关闭搜索匹配的高亮显示
 set incsearch "设置快速匹配
 set backspace=2 "设置退格键为2个空格
 "设置中文字符的乱码问题
+set fileencoding=utf-8
 set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set fileformats=unix
-set encoding=prc
 function MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
